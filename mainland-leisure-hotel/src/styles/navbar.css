@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: wheat;
+    color: black;
+    padding: 1rem 2rem;
+}
+.nav-links {
+    display: flex;
+    gap : 2rem;
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: width 0.4s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+

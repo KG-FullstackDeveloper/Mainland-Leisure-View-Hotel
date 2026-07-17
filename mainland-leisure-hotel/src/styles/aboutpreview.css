@@ -1,0 +1,8 @@
+.aboutpreview{
+    display: flex;
+    gap: 1rem;
+}
+
+.about-img{
+    width: 30rem;
+}

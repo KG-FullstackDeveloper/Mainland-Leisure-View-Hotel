@@ -1,0 +1,83 @@
+.hero{
+    width: 100%;
+    position: relative;
+}
+
+.hero-image{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 2;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content span {
+    color: #ffb400;
+    font-size: 2rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.book-btn {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.book-now:hover {
+    background: #c1121f;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+.learn-more{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 2px solid grey;
+}
+
+.real-hero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.date{
+    display: flex;
+    width: 80%;
+    background-color: blue;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.date div{
+    display: flex;
+    padding: 5px 15px;
+}
+
+.q{
+    margin-top: 1rem;
+}
+

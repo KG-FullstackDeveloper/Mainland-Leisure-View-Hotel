@@ -1,0 +1,22 @@
+.page-header-container{
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 4rem;
+}
