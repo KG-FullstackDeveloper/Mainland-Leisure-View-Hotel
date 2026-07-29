@@ -1,6 +1,26 @@
 import { MapPin } from "lucide-react";
+import { useState, useEffect } from "react";
 import "../../styles/maparea.css";
 function MapArea() {
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    setMessage("Subscribed successfully!");
+  };
+
+  useEffect(() => {
+    const handleClick = () => {
+      setMessage("");
+    };
+
+    document.addEventListener("click", handleClick);
+
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, []);
   return (
     <section className="map-area">
       <div className="map-a">
@@ -13,24 +33,23 @@ function MapArea() {
           <div className="location">
             2 Ayilara St. Off Clegg Street, <br /> Surulere, Lagos, Nigeria.
           </div>
-        </div> 
-        <div className="link-div">
-           <a
-          href="https://maps.google.com/?q=Mainland+Leisure+View+Hotel"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link"
-        >
-          Get Directions
-        </a> 
         </div>
-        
+        <div className="link-div">
+          <a
+            href="https://maps.google.com/?q=Mainland+Leisure+View+Hotel"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            Get Directions
+          </a>
+        </div>
       </div>
 
       <div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1120362555885!2d3.3582250749928257!3d6.507499993484834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c40c3f12ce7%3A0x626752480f3f0691!2sMainland%20Leisure%20View%20Hotel!5e0!3m2!1sen!2sng!4v1785248968884!5m2!1sen!2sng"
-          width="600"
+          width="550"
           height="300"
           style={{ border: 0 }}
           allowFullScreen={true}
@@ -44,10 +63,20 @@ function MapArea() {
         <p>
           Subscribe to our newsletter for updates <br /> and special offers
         </p>
-        <div>
-          <input type="email" placeholder="Enter your email" />
-          <button>Subscribe</button>
-        </div>
+        <form
+          className="link-div-a"
+          onSubmit={handleSubmit}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="input"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p className="p">{message}</p>
       </div>
     </section>
   );

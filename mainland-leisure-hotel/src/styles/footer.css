@@ -1,0 +1,20 @@
+.img{
+    background-color: transparent;
+    width: 7rem;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    background-color: #5A1118;
+    color: white;
+}
+
+.foot-lead{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}

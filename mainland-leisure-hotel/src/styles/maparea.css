@@ -21,11 +21,29 @@
 }
 
 .link-div{
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .link{
     padding: 1rem;
     background-color: red;
     color: white;
+    border-radius: 5px;
+}
+
+.link-div-a{
+    margin-top: 1rem;
+
+    display: flex;
+    gap: 1rem;
+}
+
+.input{
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+}
+
+.p{
+    color: green;
 }

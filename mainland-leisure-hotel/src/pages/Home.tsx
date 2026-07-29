@@ -5,6 +5,7 @@ import AboutPreview from "../components/Home/AboutPreview";
 import Fetch from "../components/Home/Fetch";
 import Photo from "../components/Home/Photo";
 import MapArea from "../components/Home/MapArea";
+import Footer from "../components/layouts/Footer"
 function Home() {
   return (
     <>
@@ -21,6 +22,7 @@ function Home() {
         <Photo />
       <MapArea />
       </div>
+      <Footer />
     </>
   );
 }
