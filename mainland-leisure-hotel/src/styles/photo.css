@@ -1,0 +1,64 @@
+.photo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-description{
+    white-space: pre-line;
+}
+
+.photo-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-content h3{
+    color: red;
+}
+
+.arr,
+.ar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background: black;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.photos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.test{
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.test{
+    flex: 0 0 20rem;
+}
+
+.swiper{
+    flex: 1;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+}

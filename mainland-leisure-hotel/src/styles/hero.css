@@ -59,6 +59,11 @@
 }
 
 .real-hero{
+    position: absolute;
+    left: 50%;
+    bottom: -37px;
+    transform: translateX(-50%);
+    z-index: 100;
     width: 100%;
     display: flex;
     justify-content: center;

@@ -1,0 +1,31 @@
+.map-area{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    align-items: center;
+    margin-top: 4rem;
+    background-color: pink;
+
+    border-radius: 5px;
+}
+
+.map,
+.h2{
+    margin-bottom: 1.5rem;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.link-div{
+    margin-top: 1rem;
+}
+
+.link{
+    padding: 1rem;
+    background-color: red;
+    color: white;
+}
