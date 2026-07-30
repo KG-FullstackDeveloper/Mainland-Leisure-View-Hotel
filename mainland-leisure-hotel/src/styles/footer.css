@@ -1,6 +1,6 @@
 .img{
     background-color: transparent;
-    width: 7rem;
+    width: 5rem;
 }
 
 .footer{
@@ -9,12 +9,39 @@
     justify-content: center;
     padding: 3rem;
     background-color: #5A1118;
-    color: white;
+    color: white; 
+    margin-top: 0;     
 }
-
+/*  #5A1118   */
 .foot-lead{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.foot-lead p{
+    margin-top: 0.5rem;
+    line-height: 1.7rem;
+}
+
+.foot-head-hero{
+    display: flex;
+    gap: 1rem;
+}
+
+ul{
+    margin-top: 1rem;
+    line-height: 1.7rem;
+}
+
+.social-icons{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.social-icons a{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 0.7rem 0.3rem 0.3rem 0.3rem;
 }
