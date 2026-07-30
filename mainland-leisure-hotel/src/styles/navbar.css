@@ -39,6 +39,19 @@
     width: 100%;
 }
 
+.logo{
+    display: flex;
+    gap: 1rem;
+}
+
+.logo img{
+    width: 3.5rem;
+}
+
+.logo h2{
+    font-size: 1.4rem;
+}
+
 button {
     background-color: red;
     color: white;
